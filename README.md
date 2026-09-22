@@ -15,3 +15,14 @@ rojo serve
 ```
 
 For more help, check out [the Rojo documentation](https://rojo.space/docs).
+
+## Publishing to Roblox
+
+Publish only captures whatever is currently synced into Studio's Explorer at that moment — it does not re-read the `src/` files fresh. If `rojo serve` isn't running or Studio isn't connected when you publish, Studio still has the old version in its Explorer, and Publish would ship stale code.
+
+Safe sequence, every time:
+
+1. `rojo serve` running
+2. Studio connected (Rojo plugin → Connect)
+3. Confirm your latest edits show up in the Explorer
+4. Then Publish (File → Publish to Roblox)

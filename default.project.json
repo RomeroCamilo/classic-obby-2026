@@ -1,5 +1,5 @@
 {
-  "name": "my-obby",
+  "name": "classic-obby-2026",
   "tree": {
     "$className": "DataModel",
 
@@ -46,6 +46,27 @@
             512,
             20,
             512
+          ]
+        }
+      },
+      "Platform1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Color": [
+            0.152941,
+            0.674510,
+            0.152941
+          ],
+          "Position": [
+            0,
+            1,
+            10
+          ],
+          "Size": [
+            6,
+            1,
+            6
           ]
         }
       }
